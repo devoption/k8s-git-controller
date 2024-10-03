@@ -1,0 +1,52 @@
+{
+    "name": "devoptn/k8s-git-controller",
+    "description": "Kubernetes Git Controller",
+    "keywords": [
+        "kubernetes",
+        "git",
+        "controller",
+        "k8s",
+        "devoption",
+        "devoptn",
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/devoption/k8s-git-controller/issues",
+        "source": "https://github.com/devoption/k8s-git-controller"
+    },
+    "authors": [
+        {
+            "name": "DevOption Engineering",
+            "email": "engineering@devoption.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DevOption\\Git\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^11.25",
+        "illuminate/contracts": "^11.25",
+        "devoptn/k8s-api": "^0.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevOption\\Git\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevOption\\Git\\Providers\\GitServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
